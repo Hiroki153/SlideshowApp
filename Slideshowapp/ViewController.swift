@@ -156,7 +156,16 @@ class ViewController: UIViewController, UIGestureRecognizerDelegate {
         @objc func tapped(_ sender: UITapGestureRecognizer){
 
             selectedImage = imageView.image
-
+            
+            //タップされたときのスライドショーの制御を行う
+            if self.timer != nil {
+                
+                    self.timer!.invalidate()
+                    self.timer = nil
+                imageForward.isEnabled = true
+                imageBack.isEnabled = true
+                slideShowStart.setTitle("再生", for: .normal)
+            }
             
             if selectedImage != nil {
                 //imageZoomUpViewControllerへ遷移するためにSegueを呼び出す
