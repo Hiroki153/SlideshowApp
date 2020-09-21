@@ -7,16 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4E5199B42517A1650091CDDD /* ImageZoomUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E5199B32517A1650091CDDD /* ImageZoomUpViewController.swift */; };
 		4EBEBDD9250CB8F900CE73A3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EBEBDD8250CB8F900CE73A3 /* AppDelegate.swift */; };
 		4EBEBDDB250CB8F900CE73A3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EBEBDDA250CB8F900CE73A3 /* SceneDelegate.swift */; };
 		4EBEBDDD250CB8F900CE73A3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EBEBDDC250CB8F900CE73A3 /* ViewController.swift */; };
 		4EBEBDE0250CB8F900CE73A3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4EBEBDDE250CB8F900CE73A3 /* Main.storyboard */; };
 		4EBEBDE2250CB8FC00CE73A3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4EBEBDE1250CB8FC00CE73A3 /* Assets.xcassets */; };
 		4EBEBDE5250CB8FC00CE73A3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4EBEBDE3250CB8FC00CE73A3 /* LaunchScreen.storyboard */; };
-		4EBEBDED250CB9FA00CE73A3 /* ImageZoomUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EBEBDEC250CB9FA00CE73A3 /* ImageZoomUpViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4E5199B32517A1650091CDDD /* ImageZoomUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageZoomUpViewController.swift; sourceTree = "<group>"; };
 		4EBEBDD5250CB8F900CE73A3 /* Slideshowapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Slideshowapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4EBEBDD8250CB8F900CE73A3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4EBEBDDA250CB8F900CE73A3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -25,7 +26,6 @@
 		4EBEBDE1250CB8FC00CE73A3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4EBEBDE4250CB8FC00CE73A3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4EBEBDE6250CB8FC00CE73A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4EBEBDEC250CB9FA00CE73A3 /* ImageZoomUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageZoomUpViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,8 +61,8 @@
 				4EBEBDD8250CB8F900CE73A3 /* AppDelegate.swift */,
 				4EBEBDDA250CB8F900CE73A3 /* SceneDelegate.swift */,
 				4EBEBDDC250CB8F900CE73A3 /* ViewController.swift */,
+				4E5199B32517A1650091CDDD /* ImageZoomUpViewController.swift */,
 				4EBEBDDE250CB8F900CE73A3 /* Main.storyboard */,
-				4EBEBDEC250CB9FA00CE73A3 /* ImageZoomUpViewController.swift */,
 				4EBEBDE1250CB8FC00CE73A3 /* Assets.xcassets */,
 				4EBEBDE3250CB8FC00CE73A3 /* LaunchScreen.storyboard */,
 				4EBEBDE6250CB8FC00CE73A3 /* Info.plist */,
@@ -143,7 +143,7 @@
 			files = (
 				4EBEBDDD250CB8F900CE73A3 /* ViewController.swift in Sources */,
 				4EBEBDD9250CB8F900CE73A3 /* AppDelegate.swift in Sources */,
-				4EBEBDED250CB9FA00CE73A3 /* ImageZoomUpViewController.swift in Sources */,
+				4E5199B42517A1650091CDDD /* ImageZoomUpViewController.swift in Sources */,
 				4EBEBDDB250CB8F900CE73A3 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

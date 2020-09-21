@@ -16,7 +16,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="center" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="iZq-b1-US6">
-                                <rect key="frame" x="93" y="444" width="228" height="30"/>
+                                <rect key="frame" x="87" y="532" width="240" height="30"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XTf-N2-exT">
                                         <rect key="frame" x="0.0" y="0.0" width="31" height="30"/>
@@ -26,14 +26,14 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qyF-r0-w5E">
-                                        <rect key="frame" x="81" y="0.0" width="31" height="30"/>
+                                        <rect key="frame" x="87" y="0.0" width="31" height="30"/>
                                         <state key="normal" title="進む"/>
                                         <connections>
                                             <action selector="imageForward:" destination="BYZ-38-t0r" eventType="touchUpInside" id="D0h-4h-n5l"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KYX-jN-XQ7">
-                                        <rect key="frame" x="162" y="0.0" width="66" height="30"/>
+                                        <rect key="frame" x="174" y="0.0" width="66" height="30"/>
                                         <state key="normal" title="再生/停止"/>
                                         <connections>
                                             <action selector="slideShowStart:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XQQ-sW-yS1"/>
@@ -42,19 +42,18 @@
                                 </subviews>
                             </stackView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="DbJ-cn-kFu">
-                                <rect key="frame" x="87" y="194" width="250" height="150"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="250" id="fBZ-5X-1Lj"/>
-                                    <constraint firstAttribute="height" constant="150" id="pS1-fH-rjc"/>
-                                </constraints>
+                                <rect key="frame" x="30" y="144" width="354" height="288"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="DbJ-cn-kFu" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="87" id="B5u-Qg-eJ9"/>
-                            <constraint firstItem="iZq-b1-US6" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="400" id="eQf-fr-Dtj"/>
-                            <constraint firstItem="DbJ-cn-kFu" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="150" id="fxT-ez-Yro"/>
-                            <constraint firstItem="iZq-b1-US6" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="zsl-aO-w7B"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="DbJ-cn-kFu" secondAttribute="trailing" constant="30" id="9Qt-Tr-QpQ"/>
+                            <constraint firstItem="iZq-b1-US6" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="87" id="D0c-Ad-QTj"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="iZq-b1-US6" secondAttribute="bottom" constant="300" id="Ler-1d-jKZ"/>
+                            <constraint firstItem="DbJ-cn-kFu" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="T8u-Ca-YIp"/>
+                            <constraint firstItem="iZq-b1-US6" firstAttribute="top" secondItem="DbJ-cn-kFu" secondAttribute="bottom" constant="100" id="YLA-IA-u5q"/>
+                            <constraint firstItem="DbJ-cn-kFu" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="jbk-k0-m4r"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="iZq-b1-US6" secondAttribute="trailing" constant="87" id="zyh-PT-6NW"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -78,23 +77,29 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dbT-mZ-mJn">
-                                <rect key="frame" x="192" y="433" width="31" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dbT-mZ-mJn">
+                                <rect key="frame" x="87" y="460" width="240" height="248"/>
                                 <state key="normal" title="戻る"/>
                                 <connections>
                                     <segue destination="jNz-Pi-gZL" kind="unwind" unwindAction="unwind:" id="9HO-nR-Gw4"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bdQ-ub-cb6">
-                                <rect key="frame" x="20" y="112" width="374" height="231"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="bdQ-ub-cb6">
+                                <rect key="frame" x="0.0" y="10" width="414" height="400"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="400" id="RLj-n9-541"/>
+                                </constraints>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="bdQ-ub-cb6" firstAttribute="leading" secondItem="PXb-kb-l2d" secondAttribute="leading" constant="20" id="6kr-ne-2A8"/>
-                            <constraint firstItem="dbT-mZ-mJn" firstAttribute="top" secondItem="bdQ-ub-cb6" secondAttribute="bottom" constant="90" id="P2h-ur-Cgy"/>
-                            <constraint firstItem="PXb-kb-l2d" firstAttribute="trailing" secondItem="bdQ-ub-cb6" secondAttribute="trailing" constant="20" id="jJj-Z5-QPB"/>
-                            <constraint firstItem="bdQ-ub-cb6" firstAttribute="top" secondItem="PXb-kb-l2d" secondAttribute="top" constant="68" id="wtg-9l-c8b"/>
+                            <constraint firstItem="bdQ-ub-cb6" firstAttribute="top" secondItem="PXb-kb-l2d" secondAttribute="top" constant="10" id="9I2-CF-w49"/>
+                            <constraint firstItem="dbT-mZ-mJn" firstAttribute="leading" secondItem="PXb-kb-l2d" secondAttribute="leading" constant="87" id="Kab-cM-TtG"/>
+                            <constraint firstItem="bdQ-ub-cb6" firstAttribute="leading" secondItem="PXb-kb-l2d" secondAttribute="leading" id="Rmj-Kq-MUh"/>
+                            <constraint firstItem="PXb-kb-l2d" firstAttribute="trailing" secondItem="bdQ-ub-cb6" secondAttribute="trailing" id="mNx-Vl-3rc"/>
+                            <constraint firstItem="PXb-kb-l2d" firstAttribute="trailing" secondItem="dbT-mZ-mJn" secondAttribute="trailing" constant="87" id="qHQ-u0-GWE"/>
+                            <constraint firstItem="PXb-kb-l2d" firstAttribute="bottom" secondItem="dbT-mZ-mJn" secondAttribute="bottom" constant="100" id="tlS-5g-1fx"/>
+                            <constraint firstItem="dbT-mZ-mJn" firstAttribute="top" secondItem="bdQ-ub-cb6" secondAttribute="bottom" constant="50" id="zZ7-d6-Oih"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="PXb-kb-l2d"/>
                     </view>

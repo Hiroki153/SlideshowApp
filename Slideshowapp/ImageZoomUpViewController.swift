@@ -2,7 +2,7 @@
 //  ImageZoomUpViewController.swift
 //  Slideshowapp
 //
-//  Created by 仲井宏紀 on 2020/09/12.
+//  Created by 仲井宏紀 on 2020/09/20.
 //  Copyright © 2020 hiroki.nakai. All rights reserved.
 //
 
@@ -11,25 +11,28 @@ import UIKit
 class ImageZoomUpViewController: UIViewController {
 
     //拡大画像を表示するimageViewを配置
+       
+       @IBOutlet weak var zoomUpImageView: UIImageView!
+       //受け取りためのプロパティを宣言する
     
-    @IBOutlet weak var zoomUpImageView: UIImageView!
-    //受け取りためのプロパティを宣言する
-    var selectedImg = UIImage(named: "")
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
+    var selectedImg: UIImage!
+       
+       override func viewDidLoad() {
+           super.viewDidLoad()
         
+        
+           
 
 
-        // Do any additional setup after loading the view.≈
-        //Image Viewに読み込んだ画像をセット
-        zoomUpImageView.image = selectedImg
-                //画像のアスペクト比を維持しUIImageViewサイズに収まるように表示
-        zoomUpImageView.contentMode = UIView.ContentMode.scaleAspectFit
-        
-    }
-    
-   
+           // Do any additional setup after loading the view.≈
+           //Image Viewに読み込んだ画像をセット
+           zoomUpImageView.image = selectedImg
+                   //画像のアスペクト比を維持しUIImageViewサイズに収まるように表示
+           zoomUpImageView.contentMode = UIView.ContentMode.scaleAspectFit
+           
+       }
+
     /*
     // MARK: - Navigation
 

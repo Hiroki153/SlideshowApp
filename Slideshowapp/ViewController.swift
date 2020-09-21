@@ -18,6 +18,7 @@ class ViewController: UIViewController, UIGestureRecognizerDelegate {
     
     var selectedImage: UIImage?
     
+    
     //表示している画像の番号
        var dispImageNo = 0
     
@@ -27,8 +28,9 @@ class ViewController: UIViewController, UIGestureRecognizerDelegate {
                     "sushi",
                     "noodle"
                 ]
+    //表示している画像の番号から名前を取り出し
+          lazy var name = imageNameArray[dispImageNo]
 
-       
        //表示している画像の番号を元に画像を表示する
     func displayImage(){
            
@@ -42,20 +44,17 @@ class ViewController: UIViewController, UIGestureRecognizerDelegate {
             dispImageNo = 0
         }
         
-          //表示している画像の番号から名前を取り出し
-            let name = imageNameArray[dispImageNo]
-            
-            //画像を読み込み
-            let image = UIImage(named: name)
+        //表示している画像の番号から名前を取り出し
+        let name = imageNameArray[dispImageNo]
+                
+        //画像を読み込み
+        let image = UIImage(named: name)
 
-        
-         
-           //Image Viewに読み込んだ画像をセット
-           imageView.image = image
-        
-       
+        //Image Viewに読み込んだ画像をセット
+        imageView.image = image
         
     }
+    
     //一定の間隔で処理を行うためのタイマー
     var timer : Timer?
     
@@ -71,7 +70,7 @@ class ViewController: UIViewController, UIGestureRecognizerDelegate {
     
     @IBAction func imageBack(_ sender: Any) {
         //表示している画像の番号
-           dispImageNo -= -1
+           dispImageNo -= 1
         displayImage()
         
         if dispImageNo < 0 {
@@ -104,9 +103,9 @@ class ViewController: UIViewController, UIGestureRecognizerDelegate {
           super.viewDidLoad()
           // Do any additional setup after loading the view.
         //初期状態は最初の画像を表示
-                 dispImageNo = 0
+        dispImageNo = 0
         //画像を表示
-           displayImage()
+        displayImage()
         
         slideShowStart.setTitle("再生", for: .normal)
         
@@ -148,6 +147,7 @@ class ViewController: UIViewController, UIGestureRecognizerDelegate {
             }
     
     }
+
     
   
         
@@ -156,26 +156,24 @@ class ViewController: UIViewController, UIGestureRecognizerDelegate {
         @objc func tapped(_ sender: UITapGestureRecognizer){
 
             selectedImage = imageView.image
+
             
             if selectedImage != nil {
                 //imageZoomUpViewControllerへ遷移するためにSegueを呼び出す
-                performSegue(withIdentifier: "toimageZoomUpViewController", sender: nil)
+                performSegue(withIdentifier: "toImageZoomUpViewController", sender: nil)
         }
     }
         //imagezoomupviewcontrollerへの遷移//
                   override func prepare(for segue: UIStoryboardSegue, sender: Any!){
-                      if segue.identifier == "toImageZoomUpViewController" {
+                    if (segue.identifier == "toImageZoomUpViewController"){
                       //segueから遷移先のImageZoomUpViewControlerを取得する
                       let imageZUV = segue.destination as! ImageZoomUpViewController
+                        
                       //遷移先のImageZoomUpViewControllerで宣言しているimageに値を代入して渡す
                       imageZUV.selectedImg = selectedImage
-                  }
+                    }
         
     }
-          
-
-            
-           
 }
             
         
